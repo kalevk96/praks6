@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+if test $# -ne 1;
+then
+	echo "Sisesta arv"
+else
+	jaak=$(( $1 % 2 ))
+	#
+	# Tingimus - kui jaak on null - arv on paaris
+	#
+	if test $jaak -eq 0
+	then
+	echo "antud arv on paaris"
+	else
+	echo "antud arv on paaritu"
+	fi
+fi
+#
